@@ -14,13 +14,12 @@ public class CameraFollow : MonoBehaviour {
 		Assert.IsNotNull (target);
 	}
 
-	// Use this for initialization
+	
 	void Start () {
 
 		offset = transform.position - target.position;
 	}
 	
-	// Update is called once per frame
 	void Update () {
 
 		Vector3 targetCamPos = target.position + offset;
